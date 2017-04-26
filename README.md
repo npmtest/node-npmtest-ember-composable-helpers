@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-composable-helpers/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-composable-helpers/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ember-composable-helpers/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-composable-helpers/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-composable-helpers/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ember-composable-helpers/build/coverage.html/index.html)
 
@@ -35,30 +35,15 @@
 ```json
 
 {
-    "name": "ember-composable-helpers",
-    "version": "2.0.1",
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/DockYard/ember-composable-helpers/issues"
+    },
+    "dependencies": {
+        "broccoli-funnel": "^1.0.1",
+        "ember-cli-babel": "^5.1.7"
+    },
     "description": "Composable helpers for Ember",
-    "directories": {
-        "doc": "doc",
-        "test": "tests"
-    },
-    "scripts": {
-        "build": "ember build",
-        "start": "ember server",
-        "node-test": "mocha test --recursive --reporter spec",
-        "test": "ember try:each"
-    },
-    "repository": "https://github.com/DockYard/ember-composable-helpers",
-    "bugs": "https://github.com/DockYard/ember-composable-helpers/issues",
-    "homepage": "https://github.com/DockYard/ember-composable-helpers",
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "author": [
-        "Lauren Tan <arr@sugarpirate.com>",
-        "Marten Schilstra <mail@martenschilstra.nl>"
-    ],
-    "license": "MIT",
     "devDependencies": {
         "broccoli-asset-rev": "^2.4.5",
         "chai": "^3.5.0",
@@ -91,6 +76,22 @@
         "loader.js": "^4.0.10",
         "mocha": "^2.4.5"
     },
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
+    },
+    "dist": {
+        "shasum": "1568849ee176927fb73b0ed0a16e20b0ac90d774",
+        "tarball": "https://registry.npmjs.org/ember-composable-helpers/-/ember-composable-helpers-2.0.1.tgz"
+    },
+    "ember-addon": {
+        "configPath": "tests/dummy/config"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "gitHead": "f66a46b7b16b901378362a2e9581b396810dbb7f",
+    "homepage": "https://github.com/DockYard/ember-composable-helpers",
     "keywords": [
         "ember-addon",
         "helpers",
@@ -103,13 +104,32 @@
         "drop",
         "compute"
     ],
-    "dependencies": {
-        "broccoli-funnel": "^1.0.1",
-        "ember-cli-babel": "^5.1.7"
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "dockyard"
+        },
+        {
+            "name": "martndemus"
+        },
+        {
+            "name": "sugarpirate"
+        }
+    ],
+    "name": "ember-composable-helpers",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DockYard/ember-composable-helpers.git"
     },
-    "ember-addon": {
-        "configPath": "tests/dummy/config"
-    }
+    "scripts": {
+        "build": "ember build",
+        "node-test": "mocha test --recursive --reporter spec",
+        "start": "ember server",
+        "test": "ember try:each"
+    },
+    "version": "2.0.1",
+    "bin": {}
 }
 ```
 
